@@ -1,0 +1,122 @@
+:root {
+  --bright: white;
+  --light: white;
+  --medium: #ffffffa0;
+  --accent: #000000e6;
+  --dark: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    background-color: var(--bright);
+}
+
+.menu {
+    position: absolute;
+    display: grid;
+    place-items:center;
+    grid-template-columns: 1fr 1fr;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000e6;
+    z-index: 1;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-block: 35vh;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border-right: #000 dotted 1px;
+}
+
+.title img {
+    width: 10%;
+}
+
+.score {
+    position: absolute;
+    top: 50%; /* Position Y halfway in */
+    left: 50%; /* Position X halfway in */
+    transform: translate(-50%,-50%);
+    font-size: 30vw;
+    opacity: .2;
+    line-height: 1.5;
+    z-index: 2;
+    color: rgb(59, 59, 59);
+}
+
+.start {
+    position: absolute;
+    top: 50%; /* Position Y halfway in */
+    left: 50%; /* Position X halfway in */
+    border: 1px solid #000;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 2rem;
+    line-height: 1.5;
+    padding: 1vh 8vw;
+    text-decoration: none;
+    transition: .2s ease-out;
+    transform: translate(-50%,-50%);
+    box-shadow: 4px 4px 0 #000;
+    z-index: 4;
+    opacity: 1;
+    transition: opacity .25s;
+}
+
+.start:hover {
+    box-shadow: 0px 0px 0 #000;
+    border: 1px solid white;
+    transform: translate(calc(-50% + 4px),calc(-50% + 4px));
+}
+
+.game {
+    position: relative;
+    display: grid;
+    place-items:center;
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    z-index: 3;
+}
+
+.container {
+    height: 8vh;
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.track {
+    position: relative;
+    width:100%;
+    box-shadow: #00000080 0px 30px 60px -12px inset,#00000080 0px 18px 36px -18px inset;
+}
+
+.lock {
+    position: absolute;
+    height: 100%;
+    background-color:  #FFBC00 ;
+    z-index: 0;
+    opacity: 0;
+}
+
+.key {
+    position: absolute;
+    height: 100%;
+    width: 1%;
+    background-color: rgb(0, 255, 255);
+    z-index: 0;
+    opacity: 0;
+}
