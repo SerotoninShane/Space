@@ -1,6 +1,4 @@
 # Space Game
-
-## Description
 This is a basic interactive game built with JavaScript. It features a game element that starts when the user clicks anywhere on the screen or presses the Space key. The game involves tracking and locking elements on the screen, with a scoring system that updates based on user interactions.
 
 ## How It Works
