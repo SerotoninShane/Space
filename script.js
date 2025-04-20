@@ -92,3 +92,4 @@ function Game() {
 }
 
 Generate()
+}
