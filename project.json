@@ -1,4 +1,7 @@
 {
-  "technologies": ["React", "Canvas API", "AI"],
+  "technologies": [
+    "HTML/CSS",
+    "JavaScript"
+  ],
   "image": "Space.png"
 }
